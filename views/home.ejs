@@ -1,0 +1,239 @@
+<% layout("/layouts/boilerplate") %>
+
+<section class="hero">
+    <div>
+        <% if(!currUser) { %>
+            <h1 class="display-4 fw-bold">Welcome to MindMate</h1>
+        <% } %>
+        <% if(currUser) { %>
+            <h1 class="display-4 fw-bold">Welcome to MindMate, <%= username %></h1>
+        <% } %>
+
+        <p class="lead">Your journey to better mental health starts here.</p>
+
+        <% if(!currUser) { %>
+            <a href="/login" class="btn btn-lg btn-primary mt-3">Get Started</a>
+        <% } %>
+        <% if(currUser) { %>
+            <a href="/appointment" class="btn btn-lg btn-primary mt-3">Get Started</a>
+        <% } %>
+    </div>
+</section>
+
+<!-- Quotes Section -->
+<h2 class="quotes-title">Daily Inspiration</h2>
+<section class="quotes-section">
+    <div class="quote-container">
+        <h3><q> <span class="quote-text"></span> </q></h3>
+    </div>
+</section>
+
+<!-- Main Section -->
+<section class="features py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fa-solid fa-calendar-check fa-2x mb-3"></i>
+                        <h5 class="card-title">Book an Appointment</h5>
+                        <p class="card-text">Schedule a session with a certified counselor at your convenience.</p>
+                        <a href="/appointment" class="btn btn-outline-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fa-solid fa-comments fa-2x mb-3"></i>
+                        <h5 class="card-title">Chat with a Doctor</h5>
+                        <p class="card-text">Start a conversation with a doctor to get advice and guidance.</p>
+                        <a href="/chat" class="btn btn-outline-primary">Chat Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fa-solid fa-quote-left fa-2x mb-3"></i>
+                        <h5 class="card-title">Motivational Quotes</h5>
+                        <p class="card-text">Get inspired with daily quotes and uplifting messages.</p>
+                        <a href="/quotes" class="btn btn-outline-primary">Explore Quotes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fa-solid fa-dumbbell fa-2x mb-3"></i>
+                        <h5 class="card-title">Daily Exercise</h5>
+                        <p class="card-text">Follow our daily exercise routines to keep your mind and body healthy.</p>
+                        <a href="/exercise" class="btn btn-outline-primary">Start Exercise</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Therapist Section -->
+<section class="counseling-services">
+    <img src="/images/image 1.png" alt="Counseling services hero image" class="hero-image" />
+    <div class="services-container">
+        <div class="services-grid">
+            <!-- Service Card 1 -->
+            <article class="service-card">
+                <h2 class="service-title">Direct Counseling</h2>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/da34b5a15a573c985b337ed118a48cf15762e2eac3f0895c10f58224ee283909?placeholderIfAbsent=true&apiKey=f83eba3fcad646e1b9247f53a10d2136"
+                    alt="Direct counseling icon" class="service-icon" />
+                <a href="/chat" class="find-therapist-link">
+                    <span class="find-therapist-text">Find therapist</span>
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/999007aa4db824a6365a3f3419f01db3ed09c515506db3d4ee4a5f29dabee4f7?placeholderIfAbsent=true&apiKey=f83eba3fcad646e1b9247f53a10d2136"
+                        alt="Arrow" class="arrow-icon" />
+                </a>
+            </article>
+            <!-- Service Card 2 -->
+            <article class="service-card">
+                <h2 class="service-title">Advice By Phone</h2>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5a6f28a0ed2d9696974df27c81f07bf677441d103b950d48322d0d9913779a5a?placeholderIfAbsent=true&apiKey=f83eba3fcad646e1b9247f53a10d2136"
+                    alt="Phone counseling icon" class="service-icon" />
+                <a href="/appointment" class="find-therapist-link">
+                    <span class="find-therapist-text">Find therapist</span>
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/999007aa4db824a6365a3f3419f01db3ed09c515506db3d4ee4a5f29dabee4f7?placeholderIfAbsent=true&apiKey=f83eba3fcad646e1b9247f53a10d2136"
+                        alt="Arrow" class="arrow-icon" />
+                </a>
+            </article>
+            <!-- Service Card 3 -->
+            <article class="service-card">
+                <h2 class="service-title">Online Counseling</h2>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b66a9a942c0cdd56454b3f2666f94ede635941eda68f67b59e0ac57baa4e2ad7?placeholderIfAbsent=true&apiKey=f83eba3fcad646e1b9247f53a10d2136"
+                    alt="Online counseling icon" class="service-icon" />
+                <a href="/appointment" class="find-therapist-link">
+                    <span class="find-therapist-text">Find therapist</span>
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/999007aa4db824a6365a3f3419f01db3ed09c515506db3d4ee4a5f29dabee4f7?placeholderIfAbsent=true&apiKey=f83eba3fcad646e1b9247f53a10d2136"
+                        alt="Arrow" class="arrow-icon" />
+                </a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- News Section -->
+<section class="news-section py-5">
+    <h2 class="section-title">Mental Health News</h2>
+    <div class="container">
+        <div class="row">
+            <% articles.forEach(article => { %>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="<%= article.urlToImage %>" class="card-img-top" alt="News Image">
+                        <div class="card-body">
+                            <h5 class="card-title"><%= article.title %></h5>
+                            <p class="card-text"><%= article.description %></p>
+                            <a href="<%= article.url %>" target="_blank" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</section>
+
+<!-- Mental Health Resources Section -->
+<section class="resources py-3">
+    <div class="container">
+        <div class="row text-center">
+            <!-- Blogs Section -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fa-solid fa-book-open fa-2x mb-3"></i>
+                        <h5 class="card-title">Mental Health Blogs</h5>
+                        <p class="card-text">Explore informative articles and insights on mental wellness.</p>
+                        <button onclick="openUrl('https://psychcentral.com/blog')" class="btn btn-outline-primary">Read Blogs</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Podcasts Section -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fa-solid fa-podcast fa-2x mb-3"></i>
+                        <h5 class="card-title">Mental Health Podcasts</h5>
+                        <p class="card-text">Listen to experts discuss mental health topics and practices.</p>
+                        <button onclick="openUrl('https://www.healthline.com/health/mental-health-podcast')" class="btn btn-outline-primary">Listen Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Conferences Section -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fa-solid fa-chalkboard-teacher fa-2x mb-3"></i>
+                        <h5 class="card-title">Mental Health Conferences</h5>
+                        <p class="card-text">Find conferences to connect with professionals and resources.</p>
+                        <button onclick="openUrl('https://mentalhealth.cmesociety.com/')" class="btn btn-outline-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Emergency Section -->
+<section class="emergency-help py-5">
+    <h2 class="section-title">Feeling Low? We’re Here for You</h2>
+    <p class="section-subtitle">Remember, you are not alone. Here are some resources to help you right now.</p>
+        
+    <div class="container text-center">
+        <a href="tel:+1234567890" class="btn btn-danger mb-3">Call the Crisis Hotline</a>
+        <button class="btn btn-outline-primary mb-3" onclick="openExercise()">Try a Breathing Exercise</button>
+    </div>
+        
+    <p class="section-subtitle mt-4">"This moment will pass. Take a deep breath, and remember you are stronger than you think."</p>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+  <h2 class="section-title">Get In Touch</h2>
+  <p class="section-subtitle">We want to share our location<br>to find us easily.</p>
+  <div class="contact-info-container">
+    <div class="contact-info-grid">
+      <div class="contact-info-item">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/915b74087ea8f80ec5e39276351866f68cc07d75898d06b1f7e4494064c97fad?placeholderIfAbsent=true&apiKey=f83eba3fcad646e1b9247f53a10d2136" alt="Office location icon" class="contact-icon">
+        <div class="contact-details">
+          <h3 class="contact-type">Office Address</h3>
+          <p class="contact-value">74A High Road, Wanstead, London, E11 7RJ</p>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9ed7cd4dd666260e2120798e7132443f795f31949d04948c622715e9f330a38c?placeholderIfAbsent=true&apiKey=f83eba3fcad646e1b9247f53a10d2136" alt="Telephone icon" class="contact-icon">
+        <div class="contact-details">
+          <h3 class="contact-type">Telephone number</h3>
+          <p class="contact-value">078-4518-4100</p>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6b8c980cc7735dd41b4b9f5a3aa15e06a956ab4510f445a33ce6bfb045fd15ca?placeholderIfAbsent=true&apiKey=f83eba3fcad646e1b9247f53a10d2136" alt="Email icon" class="contact-icon">
+        <div class="contact-details">
+          <h3 class="contact-type">Mail address</h3>
+          <p class="contact-value">info@mindmate.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Floating Chat Icon -->
+<div class="chat-icon" onclick="openChat()">
+    <i class="fa-solid fa-headset"></i>
+</div>
+
+<!--Scroll Reveal JS-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--Typed js-->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<!--Main JS-->
+<script src="/js/script.js"></script>
