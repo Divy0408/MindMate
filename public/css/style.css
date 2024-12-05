@@ -1,1 +1,774 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
+.container {
+    flex: 1;
+}
+
+/* Login Page style */
+.background-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    background: linear-gradient(to right, white 60%, #cce3f5 40%);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+    position: relative; 
+    z-index: 1;
+}
+
+.login-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.login-form h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+.login-form h5 {
+    text-align: center;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.btn-success {
+    background-color: #1e90ff;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #007bff;
+}
+
+.social-login {
+    text-align: center;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 3px black;
+}
+
+.social-icons a:hover {
+    box-shadow: 0px 0px 3px black;
+    border: 1.5px solid black;
+}
+
+.social-icons a:active {
+    transform: scale(.95);
+}
+
+.social-icons a img {
+    height: 30px;
+    width: 30px;
+}
+
+.social-icons a div {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 600;
+}
+
+.signup {
+    color: #ff69b4;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.login-image {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.login-image img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-left: -90px;
+}
+
+.cactus-image {
+    height: 300px;
+    margin-right: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+    .social-icons a div {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 385px) {
+    .social-icons a div {
+        font-size: .9rem;
+    }
+}
+
+/* Google account-login-signup-auth---------------- */
+/* #auth-account{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    background-color: red;
+    gap: 10px;
+}
+#auth-account a{
+    height: 3rem;
+    padding: 0px 20px;
+    width: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    border: 1.5px solid grey;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 10px;
+}
+
+#auth-account a:hover{
+    box-shadow: 0px 0px 3px black;
+    border: 1.5px solid black;
+}
+#auth-account a:active{
+    transform: scale(.95);
+}
+#auth-account a img{
+    height: 30px;
+    width: 30px;
+}
+#auth-account a div{
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 600;
+
+}
+
+@media (max-width: 576px) {
+    #auth-account a div{
+        font-size: 1.1rem;
+
+    }
+}
+@media (max-width: 385px) {
+    #auth-account a div{
+        font-size: .9rem;
+
+    }
+} */
+
+/* Navbar */
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.nav-menu {
+    font-size: 18px;
+}
+
+.logo {
+    height: 90px;
+    width: 150px;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    margin-top: 1rem;
+    background-image: url('/images/bg_img.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero .btn-primary {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    background-color: #3da2ef;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+    background-color: #3590d0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        height: 60vh; 
+    }
+}
+
+/* Navbar adjustments for mobile screens */
+@media (max-width: 992px) {
+    .navbar-nav {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .navbar-nav .nav-menu {
+        padding: 10px 0; 
+        width: 100%; 
+        text-align: center;
+        font-size: 16px; 
+    }
+
+    .navbar-nav .btn-login {
+        width: 100%;
+        margin-top: 10px; 
+    }
+
+    .search-input {
+        width: 80%;
+        margin: 10px auto; 
+    }
+
+    .btn-search {
+        width: 100%;
+    }
+}
+
+/* Quotes Section Styling */
+.quotes-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    color: #333;
+}
+
+.quote-container {
+    text-align: center;
+}
+
+.quotes-title {
+    margin-top: 40px;
+    text-align: center;
+    color: #007aff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+}
+
+.quote-text {
+    font-size: 1.7rem;
+    font-style: italic;
+    color: #3da2ef;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.quote-container q {
+    font-size: 3rem;
+    color: #3da2ef;
+}
+
+/* Features Section */
+.features {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.features .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.features .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.features .card-body {
+    padding: 30px 20px;
+}
+
+.features .card i {
+    color: #3da2ef;
+    margin-bottom: 15px;
+}
+
+.features .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.features .card-text {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.features .btn-outline-primary {
+    color: #3da2ef;
+    border: 1px solid #3da2ef;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.features .btn-outline-primary:hover {
+    background-color: #3da2ef;
+    color: white;
+}
+
+/* Therapist Section */
+.counseling-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.service-icon {
+    max-width: 100px;
+    margin: 20px 0;
+}
+
+.find-therapist-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3da2ef;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.find-therapist-link:hover {
+    color: #2b82c9;
+}
+
+.find-therapist-text {
+    margin-right: 10px;
+}
+
+.arrow-icon {
+    max-width: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.section-title {
+    color: #007aff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+}
+
+.section-subtitle {
+    color: #36405b;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 600px;
+    font-size: 1.3rem;
+}
+
+.contact-info-container {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.contact-info-grid {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-info-item {
+    flex: 1 1 300px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 350px;
+    border: 1px solid rgba(212, 223, 233, 1);
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-type {
+    color: #36405b;
+    font-size: 1.2rem;
+}
+
+.contact-value {
+    color: #384d62;
+    margin-top: 8px;
+    font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #222222;
+    color: white;
+    padding: 20px 0;
+    font-size: medium;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+    justify-content: right;
+}
+
+.social a {
+    font-size: 1.4rem;
+}
+
+/* Therapist Page */
+.therapist-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.therapist-title {
+    font-size: 2.5rem;
+    color: #1e2a48;
+    margin-bottom: 30px;
+}
+
+.therapist-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.therapist-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    min-height: 400px; 
+}
+
+.therapist-card:hover {
+    transform: translateY(-10px);
+}
+
+.therapist-photo {
+    width: 200px;
+    height: 230px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.therapist-name {
+    font-size: 1.5rem;
+    color: #3da2ef;
+    margin-bottom: 10px;
+}
+
+.therapist-role {
+    font-size: 1.2rem;
+    color: #7a7a7a;
+    margin-bottom: 20px;
+}
+
+.connect-btn {
+    color: #3da2ef;
+    border: 1px solid #3da2ef;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.connect-btn:hover {
+    background-color: #3da2ef;
+    color: white;
+}
+
+.view-all-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f68048;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.view-all-btn:hover {
+    background-color: #e5672e;
+}
+
+/* Book Appointment Section */
+.book-appointment-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appointment-container {
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    background-color: whitesmoke;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    color: #555;
+}
+
+sup {
+    color: red;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: #3da2ef;
+    color: white;
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #297bb7;
+}
+
+/* Floating chat icon */
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007E85;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+    z-index: 1000;
+}
+
+.chat-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Emergency section */
+.emergency-help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
