@@ -1,1 +1,36 @@
+<% layout("/layouts/boilerplate") %>
 
+<div class="background-container">
+    <div class="login-container">
+        <div class="login-form">
+            <h5>Welcome back !!!</h5>
+            <h1>Log In</h1>
+            <form class="needs-validation" action="/login" method="post" novalidate>
+                <label for="username" class="form-label">Username</label><br>
+                <input type="text" id="username" name="username" placeholder="@john123" required><br>
+                <div class="invalid-feedback">Username should be correct!</div>
+
+                <label for="password" class="form-label">Password</label><br>
+                <input type="password" id="password" name="password" placeholder="************" required><br>
+                <div class="invalid-feedback">Password should be correct!</div>
+
+                <button class="btn btn-success" type="submit">LOGIN</button>
+
+                <div class="social-login">
+                    <p>or continue with</p>
+                    <div id="auth-account" class="social-icons">
+                        <a href="/auth/google">
+                            <img src="/images/google.png" alt="Google">
+                            <div>Login with Google</div>
+                        </a>
+                    </div>
+                </div>
+                <p class="signup"><a class="signup text-decoration-none" href="/signup">Sign up for free</a></p>
+            </form>
+        </div>
+        <div class="login-image">
+            <img src="/images/person.png" alt="Person with laptop">
+            <img src="/images/cactus.png" alt="Cactus" class="cactus-image">
+        </div>
+    </div>
+</div>
